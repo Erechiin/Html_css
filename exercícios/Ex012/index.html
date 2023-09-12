@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vídeos com HTML5</title>
+</head>
+<body>
+    <h1>
+        inserindo vídeos hospedados localmente (alto custo)
+    </h1>
+    <!--vídeos hospedados localmente consomem muitos tráfego de dados e isso deixa o site mais caro para o cliente-->
+    <p>
+        este vídeo esta hospedado no meu próprio servidor
+    </p>
+    <video width="250" controls loop title="homem bebendo café" alt="homem bebendo café">
+        <source src="midia/video-760p-webm.webm" type="video/webm">
+        <source src="midia/video-760p.mp4" type="video/mp4">
+        <p>
+            infelizmente seu navegador não posssui compatibilidade com reprodução de videos.
+        </p>
+    </video> <!--da pra mudar a foto de capa do video com a propriedade poster-->
+    <h1>
+        inserindo videos do YouTube
+    </h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/CnKAcUaovcI?start=14" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!--só ir no video do youtube que quer, compartilhar e apertar em incorporar. aí copia o codigo e cola aqui-->
+</body>
+</html>

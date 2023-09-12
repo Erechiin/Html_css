@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>
+        Imagem dinâmica
+    </h1>
+    <p>
+        tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/p.png" type="image/png"> <!--ultima imagem que será exibida-->
+        <source media="(max-width: 1050px)" srcset="img/m.png" type="image/png">
+        <img src="img/g.png" alt="imagem flexivel"> <!--primeira imagem que será exibida-->
+    </picture>
+    <!--escolhe o source: media: type. -->
+    <!--lembra de botar 50px a mais pois é o tamanho da barra de rolagem-->
+    <!--é uma ordem de hierarquia: o de cima é o menor e o último o maior-->
+    <h1>
+        Reproduzindo áudio
+    </h1>
+    <p>
+        vamos aprender a reproduzir audios em HTML5
+    </p>
+    <audio src="midia/albion-online.mp3" controls loop>albion online MMORPG</audio>
+</body> <!--o parâmetro controls é para aparecer o botao de play do audio-->
+<!--o parâmetro autoplay é pro audio tocar sozinho, mas evita usar pq é chato. ou usa como uma opção a ser ligada pelo usuario-->
+    <p>
+        vamos aprender a deixar o áudio dinâmico
+    </p>
+    <audio controls>
+        <source src="midia/albion-online.mp3" type="audio/mpeg">
+        <source src="midia/albion-online.ogg" type="audio/ogg">
+        <source src="midia/albion-online.wav" type="audio/wav">
+        <p>infelizmente seu navegador não é compatível com áudio</p>
+    <!--se o browser não for compativel com mp3 vai tentar carregar o ogg, se n der vai tentar o wav, se nao der vai aparecer a mensagem no final-->
+    </audio>
+</html>

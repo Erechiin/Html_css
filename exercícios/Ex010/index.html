@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="nerd-emoji02.ico" type="image/x-icon">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>
+        Trabalhando com Links
+    </h1>
+    <h2>
+        Usando Links Externos
+    </h2>
+    <p>
+        Você pode acessar o <a href="https://gustavoguanabara.github.io/" target="_self">repositório público</a> do gustavo guanabara no github! <!--target="_self" é como se fosse padrão, o link abre na aba atual-->
+    </p>
+    <p>
+        Você pode também acessar o canal <a href="https://www.youtube.com/@CursoemVideo" target="_blank" rel="external">curso em vídeo</a> no youtube! <!--Target="_blank" faz com que o link seja aberto em outra aba. Já o rel="external" indica que o documento referenciado não é parte do mesmo site do documento que o referencia.-->
+    </p>
+    <h2>
+        Usando Links Internos
+    </h2>
+    <p>
+        essa é a primeira página do site. se quiser pode acessar a segunda página <a href="página002.html" rel="next" target="_self">clicando aqui</a>.
+    </p>
+    <p>
+        você também pode acessar nossa <a href="notícias/página003.html" rel="next" target="_self">página de notícias</a>.
+    </p> <!--lembra de dizer que tá dentro da pasta "Notícias" antes de botar o link-->
+    <h1>
+        Links para downloads
+    </h1>
+    <ul>
+        <li>
+            <a href="roupas/roupa-larissa.pdf" download="roupa-larissa.pdf" type="application/pdf">Baixar pdf</a>
+        </li>
+        <li>
+            <a href="roupas/roupa-larissa-zip.zip" download="roupa-larissa-zip.zip" type="application/zip">Baixar pdf compactado</a>
+        </li>
+    </ul> <!--acesse a lista de media types para saber o tipo e a application do seu arquivo-->
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas Personalizadas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        h1#principal{
+            border: 15px solid black;
+            border-image: url(borda.png);
+            padding: 10px;
+            border-image-slice: 25;
+            border-image-repeat: repeat;
+        }
+
+        h1#teste{
+            padding: 10px;
+            background-color: black;
+            color: rgb(132, 0, 255);
+            text-shadow:  0px 0px 2px rgb(127 0 241 / 77%), 0px 0px 20px rgb(184 108 255 / 77%);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="principal">
+        Teste de bordas
+    </h1>
+    
+    <h1 id="teste">
+        Teste Aleatório de sombra
+    </h1>
+</body>
+</html>

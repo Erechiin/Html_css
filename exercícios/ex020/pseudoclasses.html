@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo-classes</title>
+
+    <style>
+        div{
+            background-color: lightblue;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+            display: inline-block;
+            border: 1px dotted black;
+        }
+
+        div#div1{
+            background-color: lightgreen;
+        }
+
+        div#div2{
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        SELETORES PERSONALIZADOS
+
+        classes= "."
+
+        Ids= "#"
+
+        Children= ">"
+
+        Pseudo-Classes= ":"
+            pseudo-classes são relacionadas ao estado especial daquele elemento
+            ex: :hover, :visited, :active, :checked, :empty, :focus, ect. 
+
+        Pseudo-elementos = "::"
+             permite que você estilize uma parte específica do elemento
+             ex: ::after, ::before
+    -->
+
+    <div id="div1">
+        div1
+    </div>
+    <div id="div2">
+        div2
+    </div>
+    <div id="div3">
+        div3
+    </div>
+    
+</body>
+</html>

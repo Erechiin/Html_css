@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+body{
+    background-color: rgb(17, 17, 17);
+    font: bold 16px arial, 'sans serif';
+    color: white;
+    text-align: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a.veja_completo::after{
+    content: ' ←';
+}
+
+a.veja_completo::before{
+    content: '→ ';
+}
+
+a.veja_completo:hover{
+    text-decoration: underline;
+}
+
+img.voltar:hover{
+    transition: transform 0.2s;
+}
+
+img.voltar:hover{
+    transform: scale(1.2, 1.2);
+}
+
+iframe{
+    border: 2px solid rgb(255, 100, 100);
+    box-shadow: -1px 2px 20px 0px rgba(255, 0, 0, 0.527);
+}
+
+img.index{
+width: 15rem;
+height: 15rem;
+margin: 5px;
+border: 1px solid rgba(255, 0, 0, 0.527);
+transition: width 0.2s linear 0.1s, height 0.2s linear 0.1s ;
+}
+
+img.index:hover{
+    width: 16rem;
+    height: 16rem;
+}
+h1#legal{
+    text-shadow: -1px 2px 10px rgba(255, 255, 255, 0.527);
+}
+
+

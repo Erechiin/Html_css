@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+body{
+    background-color: darkgrey;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px
+}
+
+h1{
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.548);
+}
+
+main{
+    border-radius: 50px;
+    margin: 10px;
+}
+
+header{
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+article{
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+
+article > h2{
+    text-align: center;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.548);
+}
+
+article > p{
+    background-color: rgb(196, 196, 196);
+    padding: 5px;
+    border-radius: 2px
+}
+
+article > aside{
+    background-color: rgb(153, 153, 153);
+    padding-left: 5px;
+}
+
+footer{
+    color: white;
+    background-color: black;
+    height: 30px;
+}
+
+footer > p{
+    text-align: center;
+    text-shadow: 1px 2px 2px rgba(255, 255, 255, 0.548);
+    margin: 0px;
+}
+
+li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+li:hover{
+    text-decoration: underline;
+    text-shadow: -2px 1px 1px rgba(0, 0, 0, 0.301);
+}
+
+nav{
+    text-align: right;
+}
+
+ul{
+    width: 50%;
+}
+
+div#lista{
+    display: flex;
+    justify-content: right;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+p{
+    text-align: justify;
+}
+
+div#bola{
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 10px;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafio 7</title>
+</head>
+<body>
+    <h1>
+        Imagem Flexível
+    </h1>
+    <p>
+        você está vendo a imagem completa? experimente ampliar o tamanho da sua janela para ter uma melhor experiência &#x1F60A
+    </p>
+    <picture>
+        <source media="(max-width:650px )" srcset="img/por-do-sol-300.jpeg" type="image/jpeg" title="300">
+        <source media="(max-width:750px )" srcset="img/por-do-sol-600.jpeg" type="image/jpeg" title="500">
+        <source media="(max-width:950px )" srcset="img/por-do-sol-700.jpeg" type="image/jpeg" title="700">
+        <img src="img/por-do-sol-900.jpeg" title="900">
+    </picture>
+</body>
+</html>

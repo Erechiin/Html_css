@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: darkred;
+        } /*link visitado*/
+
+        a:active{
+            color: yellow;
+        } /*quando clicado*/
+
+        a:hover{
+            text-decoration: underline;
+            color: rgb(48, 0, 0);
+        }
+
+        a::after{
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        } /*The ::after pseudo-element can be used to insert some content after the content of an element.*/
+
+        a::before{
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Personalizando links
+    </h1>
+    <ul>
+            <li>
+                <a href="https://www.youtube.com/@Enygma.." target="_blank" rel="external">
+                Canal do Enygma
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/@M4rkim" target="_blank" rel="external">
+                    Canal do Markinhos
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/@TakaB" target="_blank" rel="external">Canal do Takab</a>
+            </li>
+    </ul>
+</body>
+</html>
