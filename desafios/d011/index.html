@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronauta</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body{
+            position: relative;
+            height: 100vh;
+            background: black url('imagens/espaco.jpg') center center no-repeat fixed;
+            background-size: cover;
+        }
+
+        .astronauta{
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            background-image: url('imagens/astronauta.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            top: 50%;
+            left: 50%;
+            translate: -50% -50%;
+
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.397);
+            border-radius: 20px;
+            transition: all 0.3s 0.2s;
+        }
+
+        .astronauta:hover{
+            scale: 1.1;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.541);
+        }
+
+        header{
+            margin: auto ;
+            padding: 10px;
+            max-width: 600px;
+            font-size: 1.5em;
+            background-color: rgba(0, 0, 0, 0.507);
+        }
+        blockquote{
+            text-align: center;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <blockquote cite="https://www.pensador.com/frases_astronomia/2/#:~:text=Se%20voc%C3%AA%20quiser%20fazer%20uma%20torta%20de%20ma%C3%A7%C3%A3%20a%20partir%20do%20zero%2C%20voc%C3%AA%20deve%20primeiro%20inventar%20o%20Universo.">
+            "Se você quiser fazer uma torta de maçã a partir do zero, você deve primeiro inventar o Universo."
+        </blockquote>
+    </header>
+    <div class="astronauta"></div>
+</body>
+</html>
