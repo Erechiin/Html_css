@@ -60,14 +60,11 @@ header p{
 
 section{
     font-family: var(--fonte3);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    
     padding: 10vh 0px 10vh 30px;
     max-width: 100%;
     
-    min-height: 60vh;
+   
     font-size: 3.5vw;
     line-height: 2em;
 
@@ -75,11 +72,15 @@ section{
 }
 
 .texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     max-width: 100%;
 }
 
 .paral{
-    min-height: 50vh;
+    
     box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.521);
     max-width: 100%;
 }
@@ -88,6 +89,7 @@ section{
     color: white;
     background-color: rgba(0, 0, 0, 0.445);
     padding: 10px;
+    max-width: fit-content;
 }
 
 #img1{
@@ -103,9 +105,10 @@ section{
 /*Footer*/
 
 footer{
+    font-family: var(--fonte1);
     background-color: black;
     color: white;
-    font-size: 1.5em;
+    font-size: 1em;
     text-align: center;
     padding: 10px;
     max-width: 100%;
