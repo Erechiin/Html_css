@@ -37,7 +37,7 @@ header{
     text-transform: capitalize;
     min-height: 200px;
     padding: 50px 20px;
-    width: 100%;
+    max-width: 100%;
 }
 
 header h1{
@@ -65,7 +65,7 @@ section{
     justify-content: center;
     align-items: flex-start;
     padding: 10vh 0px 10vh 30px;
-    width: 100%;
+    max-width: 100%;
     
     min-height: 60vh;
     font-size: 3.5vw;
@@ -75,13 +75,13 @@ section{
 }
 
 .texto{
-    width: 100%;
+    max-width: 100%;
 }
 
 .paral{
     min-height: 50vh;
     box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.521);
-    width: 100%;
+    max-width: 100%;
 }
 
 .paral p{
@@ -108,5 +108,5 @@ footer{
     font-size: 1.5em;
     text-align: center;
     padding: 10px;
-    width: 100vw;
+    max-width: 100%;
 }
