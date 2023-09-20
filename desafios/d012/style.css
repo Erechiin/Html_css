@@ -80,7 +80,6 @@ section{
 }
 
 .paral{
-    
     box-shadow: inset 0px 0px 20px rgba(0, 0, 0, 0.521);
     max-width: 100%;
 }
@@ -89,7 +88,9 @@ section{
     color: white;
     background-color: rgba(0, 0, 0, 0.445);
     padding: 10px;
+    border-radius: 20px;
     max-width: fit-content;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.336);
 }
 
 #img1{
