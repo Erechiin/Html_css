@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            position: relative;
+            border-collapse: collapse;
+            width: 600px;
+        }
+
+        caption{
+            padding: 10px;
+            font-weight: bolder;
+            font-size: 1.3em;
+            background-color: darkgray;
+            border: 1px solid black;
+            border-bottom: none;
+        }
+
+        td,th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead{
+            font-weight: bold;
+            text-align: center;
+            text-transform: capitalize;
+            background-color: lightgray;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: 0px;
+            background-color: lightgray;
+        }
+
+        .num{
+            text-align: right;
+        }
+
+        /*
+        EFEITO ZEBRADO
+        */
+
+        tbody > tr:nth-child(even){
+            background-color: lightgrey;
+        } /*Even = par
+            odd = impar*/ /*OBS: pode usar 2n ou 2n-1 tambem*/
+
+    </style>
+</head>
+<body>
+    <h1>
+        Uso de tabelas grandes
+    </h1>
+
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+
+                obs: th é como se fosse um heading (h1,h2,...)
+    -->
+
+    <table>
+        <caption>
+            População do Brasil
+        </caption>
+        <thead>
+            <tr> <!--scope mostra a relação entre o titulo e os dados. como os dados estão abaixo do título(em coluna) nessa tabela é "col", se fosse do lado seria "row"-->
+                <th scope="col">região</th> 
+                <th scope="col">municipios</th>
+                <th scope="col">população (2022)</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>
+                    <span>Norte</span>
+                </td>
+                <td class="num">450</td>
+                <td class="num">17.349.619</td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Nordeste</span>
+                </td>
+                <td class="num">1.793</td>
+                <td class="num">54.644.582</td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Centro-Oeste</span>
+                </td>
+                <td class="num">467</td>
+                <td class="num">16.287.809</td>
+            </tr>
+            <tr>
+                <td>
+                    <span>Sudeste</span>
+                </td>
+                <td class="num">1.668</td>
+                <td class="num">84.847.187</td>
+            </tr>
+            <tr>
+                <td class="regiao">
+                    <span>Sul</span>
+                </td>
+                <td class="num">1.191</td>
+                <td class="num">29.933.315</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+
+        </tfoot>
+    </table>
+
+    <div class="espaço-branco" style="height: 2000px;">
+
+    </div>
+</body>
+</html>
