@@ -62,7 +62,24 @@
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio quia unde quasi ipsum iure laboriosam, consequatur quisquam temporibus in deleniti placeat vitae explicabo beatae velit, eligendi facilis debitis corporis quas?
     Rerum soluta maxime rem? Vitae deserunt cumque voluptates saepe repudiandae minima temporibus sapiente libero ullam voluptatibus et porro ea sit, sequi id asperiores odio numquam, incidunt ex ipsum quibusdam magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat qui veritatis cum, suscipit odit labore voluptas omnis natus ea, minus porro fugit, dolore in modi maiores ut laudantium? Deleniti, debitis!</p>
 
-    <iframe src="" id="tela" name="site"></iframe>
+    <iframe src="" id="tela" name="site" 
+    srcdoc="<h1>escolha uma opção acima</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam totam repellendus natus quasi commodi blanditiis aut sed? Ipsa inventore voluptatem deleniti. Amet voluptatibus explicabo rem eius accusamus sunt, odit maxime.</p>"></iframe>
+
+    <!--tem o srcdoc para botar algo inical no seu iframe mas é melhor fazer um arquivo separado e botar no src-->
+
+    <!--Problemas do Iframe:
+            - Dificuldades de acesso ao conteúdo pelos mecanismos de busca;
+            - Baixa acessibilidade (dificuldades de acesso ao conteúdo pelos leitores de tela, para deficientes visuais);
+            - Baixa usabilidade (navegador ou usuário acabam se confundindo);
+            - Baixa segurança (abre as portas do seu site para outros sites);
+    -->
+
+    <!-- noreferrerpolicy="no-referrer" 
+            não permite o iframe capturar dados do usuário
+        
+        sandbox= "sandbox"
+            não captura nenhum tipo de informação -->
+
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ducimus, quas officiis vero, blanditiis quae maxime sed eveniet, at eligendi dolor placeat non asperiores! Reprehenderit ut similique ipsam incidunt eligendi.
     Nulla omnis suscipit doloribus. Accusamus, sunt vel porro inventore assumenda facilis doloremque exercitationem similique quae vitae nemo eveniet nisi blanditiis accusantium tempora eum quas odio aspernatur repellendus. Minus, dignissimos perferendis!
