@@ -12,11 +12,22 @@
     </style>
 </head>
 <body>
+    <!--método get(default) = os dados do formulário aparecem na url
+            - se passar de 3000 bytes (basicamente, letras) o formulario, nao da p usar o metodo get
+            - não usar esse meodo em campos sensiveis como senhas, cartões de crédito...
+            - não usar quando o formulario faz algum envio de arquivos
+
+        método post = os dados do formulário não aparecem na url
+            - porém, isso não significa que os dados estão seguros. dá pra ver os dados ao inspecionar o elemento e ir em network
+            - usar esse método para formularios acima de 3000 bytes (basicamente, letras)
+            - usar esse método para formulários de campos sensíveis
+        
+            OBS: para proteger melhor os dados é necessario estudar mais sobre o https e criptografia de dados.-->
     <h1>
         meu primeiro formulário
     </h1>
 
-    <form action="cadastro.php"> <!--autocomplete="off" desativa a auto completação-->
+    <form action="cadastro.php" method="post"> <!--autocomplete="off" desativa a auto completação-->
         <p>
             <label for="inome">nome</label> <!--label (etiqueta) relaciona o nome ao input-->
             <input type="text" name="nome" id="inome"> <!--name é mais util pro php, ja o id é mais util pro js-->
