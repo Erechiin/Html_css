@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 2</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body,html{
+            position: relative;
+            height: 98vh;
+            background-image: linear-gradient(45deg, orange, purple);
+        }
+        h1{
+            font-variant: small-caps;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.2em;
+            text-align: center;
+            color: white;
+        }
+        form{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            display: inline-block;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.075);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.479);
+        }
+
+        label{
+            font-weight: bold;
+            color: white;
+        }
+
+        input{
+            background-color: transparent;
+            color: white;
+            border: 1px solid black;
+        }
+
+        input::placeholder{
+            color: rgba(255, 255, 255, 0.493);
+        }
+
+        .botao{
+            border-radius: 5px;
+        }
+        .botao:hover{
+            background-color: rgba(0, 0, 0, 0.308);
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        email e senha
+    </h1>
+    <form action="cadastro.php" method="post" autocomplete="on"> <!--tem que ligar o autocomplete no form e depois dizer o tipo em cada input-->
+        <p>
+            <label for="iusu">Usuário: </label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="30" placeholder="nome do Usuário" autocomplete="username"> <!--required faz ser obrigatório preencher o campo-->
+        </p>
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" name="sen" id="isen" required minlength="8" size="10" placeholder="senha" autocomplete="current-password">
+        </p>
+        <p>
+            <input class="botao" type="submit" value="submit">
+            <input class="botao" type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
