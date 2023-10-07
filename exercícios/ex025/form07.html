@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 7</title>
+    <style>
+        *{
+            margin: 5px;
+        }
+        fieldset{
+            display: inline-block;
+            border: 2px solid black;
+        }
+        .mensage{
+            display: flex;
+        }
+
+        .mensage textarea{
+            resize: none; /*Para o usuário nao ajustar a area*/
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Informação</legend>
+            <div class="estado">
+                <label for="iest">Estado:</label>
+                <select name="estado" id="iest">
+                    <optgroup label="região nordeste">
+                        <option value="CE" >Ceará</option>
+                        <option value="PI">Piauí</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="BA">Bahia</option>
+                    </optgroup>
+                    <optgroup label="região sul">
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="PR" selected > Paraná</option>
+                        <option value="SC">Santa Catarina</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="profissao">
+                <label for="iprof">Profissão</label>
+                <input type="text" list="listadata" id="iprof" name="prof">
+                <datalist id="listadata">
+                    <option>Administrador</option>
+                    <option>Desenvolvedor</option>
+                    <option>Engenheiro</option>
+                    <option>Músico</option>
+                </datalist>
+            </div>
+
+            <div class="mensage">
+                <label for="imsg">Mensagem:</label>
+                <textarea name="msg" id="imsg" cols="30" rows="10" maxlength="340"></textarea>
+            </div>
+        </fieldset>
+        <div class="botoes">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>

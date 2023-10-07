@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 9</title>
+    <style>
+        *{
+            margin: 5px;
+        }
+        legend{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php">
+
+        <fieldset>
+            <div class="range">
+                <legend>Range</legend>
+                <label for="irang">Número</label>
+                <input type="range" name="rang" id="irang" value="0" min="0" max="10" oninput="inum.innerHTML = Number(irang.value)">
+                <output name="num" id="inum">0</output>
+            </div>
+        </fieldset>
+
+        <div class="botoes">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
