@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 6</title>
+    <style>
+        input:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadrasto.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Cores</legend>
+            <label for="icor">cor:</label>
+            <input type="color" name="cor" id="icor" value="#BF0000">
+        </fieldset>
+
+        <fieldset>
+            <legend>Satisfação</legend>
+            <label for="isat">Nível de Satisfação: </label>
+            <input type="range" name="sat" id="isat" min="0" max="10" value="10">
+        </fieldset>
+
+        <fieldset>
+            <legend>Arquivo</legend>
+            <label for="ifile">arquivo: </label>
+            <input type="file" name="file" id="ifile" multiple>
+        </fieldset>
+
+        <div class="botoes">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>

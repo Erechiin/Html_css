@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 5</title>
+    <style>
+        *{
+            margin: 5px;
+        }
+        label:hover{
+            cursor: pointer;
+        }
+        .botoes input:hover{
+            cursor: pointer;
+        }
+
+        fieldset{
+            display: flex;
+            flex-direction: column;
+            width: 10%;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Exemplo de Formulário
+    </h1>
+    <form action="cadrasto.php" target="_blank" method="get" autocomplete="on">
+        <div class="Sexo">
+            <fieldset>
+                <legend>sexo</legend>
+                <label for="fem">Feminino 
+                    <input type="radio" name="sexo" id="fem" value="F">
+                </label>
+                
+                <label for="masc">Masculino 
+                    <input type="radio" name="sexo" id="masc" value="M">
+                </label>
+                
+            </fieldset>
+        </div>
+        <div class="esportes">
+            <fieldset>
+                <legend>Esportes Favoritos</legend>
+                <label for="iesfut">Futebol
+                    <input type="checkbox" name="esfut" id="iesfut" checked>
+                </label>
+                
+                <label for="iesbasq">Basquete 
+                    <input type="checkbox" name="basq" id="iesbasq">
+                </label>
+                
+                <label for="iesnat">Natação 
+                    <input type="checkbox" name="nat" id="iesnat">
+                </label>
+                
+                <label for="iesbat">Baseball 
+                    <input type="checkbox" name="esbat" id="iesbat">
+                </label>
+                
+            </fieldset>
+        </div>
+        <div class="botoes">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
