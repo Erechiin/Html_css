@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/* Estilo para impressoras */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1,h2{
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+header{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+header h1, header menu{
+    padding: 10px;
+}
+
+header menu{
+    display: none;
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+}
+
+header ul{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+header ul li{
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+article{
+    padding: 10px;
+}
+
+article p{
+    margin: auto;
+    padding: 10px;
+    font-size: 1em;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1.5em;
+}
+
+article::after{
+    content: 'Esse artigo foi impresso através do site WWW.CursoEmVideo.com';
+    font-weight: bold;
+}
