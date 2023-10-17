@@ -1,1 +1,13 @@
 @charset "UTF-8";
+
+header ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+header ul li{
+    display: inline-block;
+    border-radius: 5px;
+}
