@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /*Mobile First*/
-
+/*Telas extra-pequenas e pequenas (Mobile First)*/
 *{
     padding: 0px;
     margin: 0px;
@@ -20,7 +20,7 @@ body{
 
 main{
     background-color: rgba(255, 255, 255, 0.87);
-    width: 400px;
+    width: 300px;
     margin: 10px auto;
     padding: 10px;
     border-radius: 10px;
@@ -31,9 +31,14 @@ main h1{
     text-shadow: -2px 2px 5px rgba(0, 0, 0, 0.705);
 }
 
+.imagem{
+    width: 100%;
+}
+
 img{
     display: block;
     margin: auto;
+    width: 80%;
 }
 
 #phone{display: block;}
