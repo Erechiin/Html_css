@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    height: 100vh;
+    background-color: lightgray;
+}
+
+header{
+    background-color: gray;
+}
+
+header > menu{
+    background-color: rgb(102, 102, 102);
+}
+
+header h1{
+    padding: 10px;
+    text-transform: capitalize;
+    text-align: center;
+    color: white;
+    text-shadow: -3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.material-symbols-outlined {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background-color: rgb(43, 43, 43);
+    transition: all 0.3s;
+}
+
+.material-symbols-outlined:hover{
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.26);
+}
+
+header ul{
+    list-style: none;
+}
+
+header li{
+    display: block;
+    padding: 10px;
+    border-top: 3px solid gray;
+    color: white;
+    text-align: center;
+    text-shadow: -3px 3px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s;
+}
+
+header li:hover{
+    background-color: rgba(211, 211, 211, 0.521);
+    color: rgba(0, 0, 0, 0.705);
+    text-shadow: -2px 2px 5px rgba(0, 0, 0, 0.308);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.26);
+}
+
+header a{
+    text-decoration: none;
+    color: inherit;
+}
+
+header menu{
+    display: none;
+}
+
+main{
+    width: 90vw;
+    background-color: white;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    line-height: 1.2em;
+}
+
+main h2{
+    text-align: center;
+}
+
+main p{
+    padding: 10px;
+    text-align: justify;
+    text-indent: 20px;
+}
