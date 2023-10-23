@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.1s;
+}
+
+html{
+    height: 100vh;
+}
+
+body{
+    background-color: purple;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 60vw;
+    border-radius: 10px;
+    box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.473);
+}
+
+fieldset{
+    border: none;
+    padding: 10px;
+}
+
+fieldset legend{
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 5px;
+}
+
+fieldset div{
+    margin-bottom: 10px;
+}
+
+.imagem{
+    background-image: url("https://miro.medium.com/v2/resize:fit:1200/1*5IwI3UFT8BmTwyY9k_vcbg.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 0px 0px;
+    height: 100px;
+    width: 100%;
+}
+
+.texto-sec{
+    padding: 2px;
+    line-height: 1.2em;
+}
+
+.email-sec, .senha-sec{
+    border-radius: 5px;
+}
+
+.email-sec{
+    display: flex;
+    background-color: purple;
+    color: white;
+    padding: 1px 1px;
+    height: 30px;
+}
+
+.email-sec label{
+    padding: 2px;
+}
+
+.email-sec input{
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.email-sec input:hover{
+    background-color: lightblue;
+}
+
+.senha-sec{
+    display: flex;
+    background-color: purple;
+    color: white;
+    padding: 1px 1px;
+    height: 30px;
+}
+
+.senha-sec label{
+    padding: 2px;
+}
+
+.senha-sec input{
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.5em;
+}
+
+.senha-sec input:hover{
+    background-color: lightblue;
+}
+
+input::placeholder{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+label:hover{
+    cursor: pointer;
+}
+
+.botoes-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.botoes-sec input{
+    height: 25px;
+    text-transform: capitalize;
+}
+
+#login, #forgot{
+    border-radius: 10px;
+    background-color: purple;
+    color: white;
+}
+
+#login:hover, #forgot:hover{
+    cursor: pointer;
+    background-color: rgb(88, 0, 88);
+}

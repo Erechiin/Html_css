@@ -3,25 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Responsivo</title>
-    <link rel="stylesheet" href="estilos/geral.css" media="all">
+    <title>login responsivo</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media.css">
 </head>
 <body>
     <div class="container">
-        <div class="texto">
-            <p>bem vindo de volta!</p>
+        <div class="imagem">
         </div>
-        <div class="login-tela">
+        <div class="login-div">
             <form action="login.php" method="post" autocomplete="on">
-                <div class="div-email">
-                    <label for="iemail">email: </label>
-                    <input type="email" name="email" id="iemail" autofocus required>
-                </div>
+                <fieldset>
+                    <legend>login</legend>
+                    <div class="texto-sec">
+                        <p>seja bem vindo(a) novamente. faça login para acessar sua conta e pode fazer as configurações no seu ambiente</p>
+                    </div>
 
-                <div class="div-senha">
-                    <label for="isenha">senha: </label>
-                    <input type="password" name="senha" id="isenha" required>
-                </div>
+                    <div class="email-sec">
+                        <label for="iemail" class="material-symbols-outlined"> person</label>
+                        <input type="email" name="email" id="iemail" required placeholder="email" autofocus>
+                    </div>
+
+                    <div class="senha-sec">
+                        <label for="isen" class="material-symbols-outlined">key</label>
+                        <input type="password" name="sen" id="isen" required maxlength="8" placeholder="8 dígitos" pattern="^[0-8]{8}$">
+                    </div>
+
+                    <div class="botoes-sec">
+                        <input type="submit" value="login" id="login">
+                        <input type="button" value="esqueci a senha" id="forgot">
+                    </div>
+                </fieldset>
             </form>
         </div>
     </div>
