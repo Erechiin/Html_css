@@ -25,6 +25,7 @@ Telas Extra-Grandes:
 @media screen and (min-width:768px) {
     body{
         background-image: linear-gradient(45deg, purple, rgb(111, 111, 253));
+        font-size: 1.1em;
     }
 
     .container{
@@ -34,25 +35,52 @@ Telas Extra-Grandes:
 
     .imagem{
         border-radius: 10px 0px 0px 10px;
-        height: 280px;
+        height: 290px;
         background-size: cover;
         background-attachment: fixed;
+    }
+
+    .email-sec input{
+        font-size: 1.1em;
+    }
+
+    .botoes-sec input{
+        font-size: 1.1em;
     }
 }
 
 @media screen and (min-width: 992px) {
     body{
         background-image: linear-gradient(45deg, purple, rgb(111, 111, 253));
+        font-size: 1.2em;
     }
 
     .container{
         flex-direction: row-reverse;
+        width: 800px;
     }
 
     .imagem{
         border-radius: 0px 10px 10px 0px;
-        height: 280px;
+        height: 335px;
         background-size: cover;
         background-attachment: fixed;
+    }
+
+    .email-sec, .senha-sec{
+        display: flex;
+        background-color: purple;
+        color: white;
+        padding: 1px 1px;
+        height: 40px;
+        border-radius: 5px;
+    }
+
+    .email-sec input{
+        font-size: 1.2em;
+    }
+
+    .botoes-sec input{
+        height: 35px;
     }
 }

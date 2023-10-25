@@ -45,11 +45,9 @@ fieldset div{
 }
 
 .imagem{
-    background-image: url("https://miro.medium.com/v2/resize:fit:1200/1*5IwI3UFT8BmTwyY9k_vcbg.jpeg");
-    background-position: center;
+    background: white url("https://miro.medium.com/v2/resize:fit:1200/1*5IwI3UFT8BmTwyY9k_vcbg.jpeg") center no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0px 0px; /*Dá pra resolver usando o overflow:hidden*/
     height: 100px;
     width: 100%;
 }
@@ -60,53 +58,35 @@ fieldset div{
 }
 
 .email-sec, .senha-sec{
-    border-radius: 5px;
-}
-
-.email-sec{
     display: flex;
     background-color: purple;
     color: white;
     padding: 1px 1px;
     height: 30px;
+    border-radius: 5px;
 }
 
-.email-sec label{
+.email-sec label, .senha-sec label{
     padding: 2px;
 }
 
-.email-sec input{
+.email-sec input, .senha-sec input{
     width: 100%;
     border-radius: 5px;
-    font-size: 1em;
     padding-left: 5px;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.450);
 }
 
-.email-sec input:hover{
+.email-sec input:focus-within, .senha-sec input:focus-within{
+    background-color: rgb(219, 219, 219);
+}
+
+.email-sec input:hover, .senha-sec input:hover{
     background-color: lightblue;
-}
-
-.senha-sec{
-    display: flex;
-    background-color: purple;
-    color: white;
-    padding: 1px 1px;
-    height: 30px;
-}
-
-.senha-sec label{
-    padding: 2px;
 }
 
 .senha-sec input{
-    width: 100%;
-    border-radius: 5px;
     font-size: 1.5em;
-    padding-left: 5px;
-}
-
-.senha-sec input:hover{
-    background-color: lightblue;
 }
 
 input::placeholder{
