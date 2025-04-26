@@ -1,1 +1,21 @@
 @charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ /*small tablet styles*/
+ @media screen and (min-width:620px){
+    
+ }
+
+ /*Large tablets and laptops styles*/
+ @media screen and (min-width: 960px){
+
+ }
+
+ /*Desktop styles*/
+ @media screen and (min-width:1200px){
+
+ }
