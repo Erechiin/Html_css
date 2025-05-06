@@ -17,7 +17,7 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#wallpaper{
+.wall{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,43 +25,51 @@ body{
     position: relative;
     height: 100vh;
     width: 100%;
-    background-image: url('../img/background2.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center 45%;
     background-size: cover;
     background-color: black;
     overflow: hidden;
 }
 
-#wallpaper::after{
+.wall h1{
+    color: white;
+    font-size: 5em;
+}
+
+.wall#wallpaper{
+    background-image: url('../img/background2.jpg');
+    background-position: center 45%;
+}
+
+.wall#wallpaper2{
+    background-image: url('../img/chile3medio.jpg');
+    background-position: center 45%;
+    margin-bottom: 10px;
+}
+
+.wall#wallpaper3{
+    background-image: url('../img/locais2.jpg');
+    background-position: left;
+}
+
+.wall#wallpaper4{
+    background-image: url('../img/curiosidades3.jpg');
+    background-position: top;
+}
+
+.wall::after{
     content: '';
     position: absolute;
     height: 100%;
     width: 100%;
     z-index: 8;
-    /* background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 65%, rgba(0, 0, 0, 0.815) 100%);
-    background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 65%, rgba(0, 0, 0, 0.815) 100%); */
+    background: -moz-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 65%, rgba(0, 0, 0, 0.815) 100%);
+    background: -webkit-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 65%, rgba(0, 0, 0, 0.815) 100%);
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 65%, rgba(0, 0, 0, 0.815) 100%);
 }
 
-#sumario{
-    /* display: flex; */
-    display: none;
-    align-items: center;
-    flex-direction: column;
-    padding: 10px;
-    border: 1px solid white;
-    border-radius: 10px;
-    width: 50%;
-    background-color: rgba(0, 0, 0, 0.199);
-    color: white;
-    font-size: 1.5em;
-    text-shadow: 0px 0px 5px black;
-}
-
 blockquote{
-    /* display: none; */
     width: 90%;
     padding: 15px 0px;
     border-radius: 0px 0px 5px 5px;
@@ -75,66 +83,17 @@ blockquote{
     font-size: 2.5em;
 }
 
-header{
-    display: none;
-    justify-content: space-between;
-    align-items: center;
-    /* background-color: rgba(0, 0, 0, 0.301); */
-    background-color: #7a8c99ad;
-    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.486); */
-    border-bottom: 1px solid rgba(0, 0, 0, 0.486);
-    color: white;
-    padding: 10px;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    z-index: 1000;
-}
-
-header h1{
-    font-size: 4em;
-    text-shadow: -5px 5px 1px rgba(0, 0, 0, 0.486);
-}
-header p{
-    text-shadow: -2px 2px 1px rgba(0, 0, 0, 0.486);
-}
-
-header nav{
-    width: 40%;
-}
-
-header ul{
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-}
-
-header a{
-    text-decoration: none;
-    color: white;
-}
-#locais{
-    color: rgb(0, 0, 220);
-}
-#curiosidades{
-    color: rgb(220, 0, 0);
-}
-
 main{
-    /* background-color: #3C91A6; */
     background-color: #c9c3b8;
+    padding-bottom: 10px;
 }
 
 main #porque{
-    /* display: flex; */
     margin-top: 40px;
-    /* flex-direction: column; */
-    /* align-items: center; */
+    margin-bottom: 40px;
 }
 
-main #porque h2{
-    /* width: 100vw; */
+main #porque h1{
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -153,4 +112,79 @@ main #porque p{
     text-indent: 30px;
     color: #260C07;
     border-radius: 10px;
+}
+
+#descubra{
+    width: 90%;
+    padding: 15px 0px;
+    border-radius: 0px 0px 5px 5px;
+    border-top: 7px solid #593939;
+    color: rgb(255, 255, 255);
+    background-color: #00000059;
+    text-align: center;
+    text-shadow: 0px 0px 5px black;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+#descubra h2{
+    font-size: 3em;
+}
+
+.cards_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.cards_container a{
+    width: 45%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.cards_container a:hover{
+    width: 50%;
+    height: 80%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    background-color: white;
+    border-radius: 5px;
+}
+.card img{
+    margin-top: 20px;
+    width: 80%;
+    height: 70%;
+    overflow: hidden;
+}
+
+.card p{
+    width: 80%;
+    /* text-align: justify; */
+    padding: 5px 0;
+    font-size: 1.1em;
+}
+
+.card#card1{
+    margin-left:3% ;
+}
+.card#card2{
+    margin-right: 3%;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    background-color: #260C07;
+    padding: 10px;
+    font-size: 0.8em;
 }
